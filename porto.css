@@ -1,69 +1,25 @@
-/* Porto.css - Custom CSS for Porto Project */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
+body {
+    font-family: 'Inter', sans-serif;
+}
 
-        .skill-card {
-            position: relative;
-            z-index: 10;
-        }
-        
-        /* Efek border gradien yang menyala dengan warna minimalis */
-        .skill-card::before {
-            content: '';
-            position: absolute;
-            inset: -2px;
-            background: conic-gradient(from 180deg at 50% 50%, #1c273a 0deg, #2b6cb0 90deg, #1c273a 180deg, #2b6cb0 270deg, #1c273a 360deg);
-            background-size: 200% 200%;
-            border-radius: 1.5rem;
-            z-index: -1;
-            opacity: 0.5;
-            filter: blur(10px);
-            transition: all 0.5s ease;
-            animation: animateGradient 5s linear infinite;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .skill-card:hover::before {
-            opacity: 1;
-            filter: blur(20px);
-            background-size: 400% 400%;
-        }
+.skill-card {
+    position: relative;
+    z-index: 10;
+}
 
-        @keyframes animateGradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Gaya baru untuk kartu sosial media */
-        .social-card {
-            position: relative;
-            z-index: 10;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .social-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(45, 212, 191, 0.2);
-        }
-
-        .social-card::before {
-            content: '';
-            position: absolute;
-            inset: -2px;
-            background: linear-gradient(135deg, #2b6cb0, #3182ce, #63b3ed);
-            border-radius: 0.75rem;
-            z-index: -1;
-            opacity: 0;
-            filter: blur(5px);
-            transition: opacity 0.3s ease, filter 0.3s ease;
-        }
-
-        .social-card:hover::before {
-            opacity: 1;
-            filter: blur(10px);
-        }
+.skill-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: conic-gradient(from 180deg at 50% 50%, #1c273a 0deg, #2b6cb0 90deg, #1c273a 180deg, #2b6cb0 270deg, #1c273a 360deg);
+    background-size: 200% 200%;
+    border-radius: 1.5rem;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(10px);
+    transition: all 
+}
